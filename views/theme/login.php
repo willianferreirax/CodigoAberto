@@ -9,7 +9,7 @@
             </div>
 
             <div class="login_form_callback">
-                <?= $flash; ?>
+                <? $flash; ?>
             </div>
 
             <label>
