@@ -35,11 +35,11 @@ define("DATA_LAYER_CONFIG", [
  */
 
 define("SOCIAL",[
-    "facebook_page" => "ads",
-    "facebook_author" => "dsa",
-    "facebook_appId" => "das",
-    "twitter_creator" => "d",
-    "twitter_site" => "a"
+    "facebook_page" => "teste",
+    "facebook_author" => "teste",
+    "facebook_appId" => "teste",
+    "twitter_creator" => "teste",
+    "twitter_site" => "teste"
 ]);
 
 /**
@@ -57,19 +57,26 @@ define("MAIL",[
     "from_email" => "willian1948@hotmail.com"
 ]);
 
+
 /**
  * SOCIAL LOGIN: FACEBOOK
  */
-
-
+//Criar aplicativo no developers.facebook
+//o facebook requer um dominio com https
 define("FACEBOOK_LOGIN",[
-     
+     "clientId" =>"",//dado pelo aplicativo em developers.facebook
+     "clientSecret" =>"",//same
+     "redirectUrl" => SITE['root']."/facebook",
+     "graphApiVersion" => "v4.0"
 ]);
+
 
 /**
  * SOCIAL LOGIN: GOOGLE
  */
-
+//o google requer que a url não tenha "www"
 define("GOOGLE_LOGIN",[
-    
+    "clientId" =>"788376721706-8lh6jtr93q7d64bgcncd52t28nn84ssl.apps.googleusercontent.com",
+    "clientSecret" =>"oIx2nEwB12X8RPmZ0gpvueIP",
+    "redirectUrl" =>SITE['root'] . "/google"
 ]);
