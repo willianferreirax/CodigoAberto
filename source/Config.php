@@ -76,7 +76,7 @@ define("FACEBOOK_LOGIN",[
  */
 //o google requer que a url não tenha "www"
 define("GOOGLE_LOGIN",[
-    "clientId" =>"788376721706-8lh6jtr93q7d64bgcncd52t28nn84ssl.apps.googleusercontent.com",
-    "clientSecret" =>"oIx2nEwB12X8RPmZ0gpvueIP",
+    "clientId" =>"",
+    "clientSecret" =>"",
     "redirectUrl" =>SITE['root'] . "/google"
 ]);
